@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Haouat Amine | Software Engineer Portfolio</title>
+    <meta name="description" content="Software Engineer with expertise in full-stack web development, system architecture, and cloud technologies.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Navigation -->
+<header class="header">
+    <nav class="nav container">
+        <a href="#home" class="nav__logo">AE</a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Toggle navigation menu">
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+        </button>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__greeting">Hi, I'm</span>
+                    <span class="hero__name">El Haouat Amine</span>
+                    <span class="hero__role">Software Engineer jr</span>
+                </h1>
+                <p class="hero__description">
+                    I develop efficient and maintainable applications using clean code and modern technologies.
+                    I am passionate about full-stack development and enjoy learning to build intuitive user experiences and scalable systems.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#projects" class="btn btn--primary">View My Work</a>
+                    <a href="#contact" class="btn btn--secondary">Get In Touch</a>
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="hero__image-container">
+                <div class="hero__image-placeholder">
+                    <img src="assets/profile.png" alt="El Haouat Amine" class="hero__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section__title">About Me</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>
+                        Aspiring Java/Angular Developer with a strong passion for creating efficient, scalable web applications. I enjoy
+                        tackling complex technical challenges and delivering high-quality, maintainable solutions. Certified in Java/Angular
+                        development through Arkx Academy in partnership with JobinTech. Eager to grow into a trusted software engineer,
+                        open to opportunities in full-stack development and front-end architecture.
+                    </p>
+                    <p>
+                        I focus on writing clean code and improving my skills in full-stack development, working with both frontend and backend technologies.
+                        I prioritize performance, accessibility, and creating intuitive user experiences.
+                    </p>
+                    <p>
+                        Outside of coding, I enjoy competitive gaming, exploring psychology topics,
+                        and reading books that deepen my understanding of human behavior and motivation.
+                        I also stay engaged with open-source communities, follow emerging technology trends,
+                        and build small side projects to continuously expand my skills as a developer.
+                    </p>
+
+                </div>
+                <div class="about__details">
+                    <div class="detail-card">
+                        <div class="detail-card__icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="detail-card__content">
+                            <h3 class="detail-card__title">Bachelor of Engineering</h3>
+                            <p class="detail-card__text">Computer Science and Technology</p>
+                            <p class="detail-card__subtext">Dalian Polytechnic University, 2024</p>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-card__icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="detail-card__content">
+                            <h3 class="detail-card__title">Work Experience</h3>
+                            <p class="detail-card__text">2+ Years</p>
+                            <p class="detail-card__subtext">customer support related</p>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-card__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="detail-card__content">
+                            <h3 class="detail-card__title">Location</h3>
+                            <p class="detail-card__text">Fez, Morocco</p>
+                            <p class="detail-card__subtext">Open to Remote Work</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section section--alt">
+        <div class="container">
+            <h2 class="section__title">Technical Skills</h2>
+            <div class="skills__grid">
+                <div class="skill-category">
+                    <h3 class="skill-category__title">
+                        <i class="fas fa-code skill-category__icon"></i>
+                        Frontend
+                    </h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">React</li>
+                        <li class="skill-item">Angular</li>
+                        <li class="skill-item">HTML5 & CSS3</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category__title">
+                        <i class="fas fa-server skill-category__icon"></i>
+                        Backend
+                    </h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Java</li>
+                        <li class="skill-item">Spring Boot</li>
+                        <li class="skill-item">PostgreSQL</li>
+                        <li class="skill-item">MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category__title">
+                        <i class="fas fa-cloud skill-category__icon"></i>
+                        DevOps & Tools
+                    </h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Docker</li>
+                        <li class="skill-item">Git</li>
+                        <li class="skill-item">Linux</li>
+                        <li class="skill-item">Agile/SCRUM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects__grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="project-card__title">Car Management System</h3>
+                    </div>
+                    <div class="project-card__body">
+                        <p class="project-card__description">
+                            This project is a cloud-native microservices platform designed for modern car rental businesses.
+                            It demonstrates high-volume rental processing, real-time car availability, secure user authentication,
+                            fault-tolerant service communication, and independently deployable services.
+                            It is designed using modern enterprise architecture patterns commonly adopted by leading technology companies.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Spring</span>
+                            <span class="project-tag">Microservices</span>
+                            <span class="project-tag">Eureka</span>
+                        </div>
+                    </div>
+                    <div class="project-card__footer">
+                        <a href="https://github.com/PhantomVisible/car-management-system"
+                           class="project-card__link"
+                           aria-label="View Car Management Platform project"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fas fa-backpack"></i>
+                            View Project
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3 class="project-card__title">Bank Account Management System</h3>
+                    </div>
+                    <div class="project-card__body">
+                        <p class="project-card__description">
+                            A robust, production-ready banking application built with Spring Boot and Hexagonal Architecture.
+                            Features multi-database persistence, automatic transaction logging, PDF statement generation, and a complete REST API.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Hexagonal</span>
+                        </div>
+                    </div>
+                    <div class="project-card__footer">
+                        <a href="https://github.com/PhantomVisible/bank-account-system/tree/main/bank-account-system"
+                           class="project-card__link"
+                           aria-label="View banking application project"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="project-card__title">Student Management Console</h3>
+                    </div>
+                    <div class="project-card__body">
+                        <p class="project-card__description">
+                            A simple Java console application to manage students and their course grades.
+                            The project uses file-based storage to save and load student data.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Streams</span>
+                            <span class="project-tag">File I/O</span>
+                            <span class="project-tag">Clean Code</span>
+                        </div>
+                    </div>
+                    <div class="project-card__footer">
+                        <a href="https://github.com/PhantomVisible/Student-Management-Console-App"
+                           class="project-card__link"
+                           aria-label="View Student Management project"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section section--alt">
+        <div class="container">
+            <h2 class="section__title">Professional Experience</h2>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-item__date">2025/10 - 2025/03</div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__title">ISP Technical Support Consultant</h3>
+                        <p class="timeline-item__company">Alten</p>
+                        <p class="timeline-item__description">
+                            Assisted field technicians from Tisseo Services and Ivacom during fiber internet FTTH installations by
+                            performing remote diagnostics, creating and managing support tickets using Salesforce, and coordinating
+                            technical resolutions. Acted as a liaison between customers and technical teams to ensure efficient service
+                            activation and a high standard of Bouygues Telecom customer satisfaction.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-item__date">2023/08 - 2022/10</div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__title">Retention Agent</h3>
+                        <p class="timeline-item__company">Cnexia</p>
+                        <p class="timeline-item__description">
+                            Handled customer retention and service inquiries across mobile, TV, internet, and home phone for Bell
+                            Aliant. Utilized strong communication and negotiation skills to retain customers requesting cancellations,
+                            ensuring high satisfaction and loyalty.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-item__date">2022/08 - 2021/09</div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__title">Inbound Customer Service</h3>
+                        <p class="timeline-item__company">Concentrix</p>
+                        <p class="timeline-item__description">
+                            Managed international hotel reservations for Louvre Hotels Group, ensuring high-quality service delivery
+                            and seamless guest experiences across a global portfolio of properties though Opera
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <p class="contact__description">
+                        I'm currently open to new opportunities and interesting projects.
+                        Feel free to reach out if you'd like to collaborate or just say hello!
+                    </p>
+                    <div class="contact__details">
+                        <a href="mailto:amineelhaouat@outlook.com" class="contact__detail">
+                            <div class="contact__detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            amineelhaouat@outlook.com
+                        </a>
+                        <a href="tel:+212716110954" class="contact__detail">
+                            <div class="contact__detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            +212 716110954
+                        </a>
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            Fez, Morocco
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <a href="https://github.com/PhantomVisible"
+                           class="contact__social-link"
+                           aria-label="GitHub profile"*
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amine-el-haouat/"
+                           class="contact__social-link"
+                           aria-label="LinkedIn profile"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary contact-form__btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer__container">
+        <p class="footer__copyright">&copy; <span id="currentYear"></span> Amine El Haouat. All rights reserved.</p>
+        <p class="footer__note">Built with HTML, CSS, and <i class="fas fa-heart"></i></p>
+    </div>
+</footer>
+
+<!-- Simple JavaScript for functionality -->
+<script>
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Mobile navigation toggle
+    const navToggle = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            navList.classList.toggle('nav__list--visible');
+            navToggle.setAttribute('aria-expanded',
+                navToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
+            );
+        });
+    }
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav__link').forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('nav__list--visible');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Simple form submission handler (would be replaced with actual backend integration)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demo form. In a real implementation, this would send an email.');
+            contactForm.reset();
+        });
+    }
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+
+            // Skip if it's just "#" or a functional link
+            if (href === '#' || href === '#!') return;
+
+            e.preventDefault();
+            const targetElement = document.querySelector(href);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>

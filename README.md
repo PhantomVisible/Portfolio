@@ -1,137 +1,27 @@
-# Software Engineer Portfolio
+# Portfolio
 
-A clean, professional portfolio website built with HTML and CSS. Designed to showcase software engineering skills, projects, and experience in a simple yet effective manner.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
-## Features
+## Development server
 
-- **Responsive Design**: Works on all devices from mobile to desktop
-- **Clean, Professional Layout**: Focus on content and readability
-- **Accessibility-First**: Semantic HTML and ARIA labels
-- **No Dependencies**: Pure HTML/CSS with minimal JavaScript
-- **Easy to Customize**: Well-structured code with CSS variables
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Project Structure
-```
-portfolio/
-├── index.html # Main HTML file
-└── css # Stylesheet folder
-    └── style.css # Main stylesheet
-├── README.md # Documentation
-└── assets/ # Resources directory
-    └── profile.png/ # Profile image
-```
+## Code scaffolding
 
-## Customization Guide
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### 1. Personal Information
-Edit the following in `index.html`:
-- Name, title, and description in the hero section
-- About me text
-- Education, experience, and location details
-- Contact information (email, phone, location)
+## Build
 
-### 2. Skills
-Update the skills section with your technical expertise:
-- Frontend technologies
-- Backend technologies
-- DevOps and tools
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### 3. Projects
-Replace the placeholder projects with your actual work:
-- Project titles and descriptions
-- Technologies used
-- Links to live demos or repositories
+## Running unit tests
 
-### 4. Experience
-Update the timeline with your professional experience:
-- Job titles and companies
-- Dates of employment
-- Key responsibilities and achievements
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### 5. Styling
-Customize the appearance by modifying CSS variables in `style.css`:
-```css
-:root {
-    --color-primary: #2563eb;     /* Primary brand color */
-    --color-secondary: #64748b;   /* Secondary color */
-    /* ... other variables */
-}
-```
-### 6. Images
+## Running end-to-end tests
 
-1. Add your profile photo:
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-    - Save as assets/images/profile.jpg
+## Further help
 
-    - Replace the placeholder in the hero section
-
-    - Ensure the image is square and properly sized
-
-1. Add project screenshots (if desired):
-
-    - Update project cards with appropriate images
-
-#### Best Practices Implemented
-**HTML** 
-
-- Semantic HTML5 elements
-
-- Proper heading hierarchy (h1 → h6)
-
-- Accessibility attributes (aria-label, alt text)
-
-- Meta tags for SEO and social sharing
-
-- Form validation attributes
-
-**CSS**
-
-- CSS variables for consistent theming
-
-- Mobile-first responsive design
-
-- BEM methodology for class naming
-
-- Flexbox and Grid for layouts
-
-- CSS reset for cross-browser consistency
-
-**Performance**
-
-- Minimal assets and dependencies
-
-- Efficient CSS selectors
-
-- Font optimization with font-display
-
-- Lazy loading ready (for future images)
-
-**Accessibility**
-
-- Sufficient color contrast
-
-- Focus states for interactive elements
-
-- Screen reader friendly markup
-
-- Keyboard navigation support
-
-**Adding Animations (Future Enhancement)**
-
-When ready to add animations, I'll consider:
-
-- Subtle transitions on hover states
-
-- Scroll-triggered animations for sections
-
-- Page load animations for hero content
-
-- CSS animations for interactive elements
-
-### 👨‍💻 Author
-
-**Amine El Haouat**
-
-**LinkedIn**: https://www.linkedin.com/in/amine-el-haouat/
-
-**GitHub**: @PhantomVisible
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

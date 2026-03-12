@@ -20,27 +20,57 @@ interface KeycapConfig { tex: string; color: number; flipY: boolean; }
 
 const KEYCAP_TEXTURE_MAP: Record<string, KeycapConfig> = {
   // Row 0: Languages & Frameworks
-  Keycap_R0C0:  { tex: 'assets/textures/java-logo.png',         color: 0xffffff, flipY: true  },
-  Keycap_R0C1:  { tex: 'assets/textures/springboot-logo.png',   color: 0xffffff, flipY: true  },
-  Keycap_R0C2:  { tex: 'assets/textures/angular-logo.png',      color: 0xffffff, flipY: true  },
-  Keycap_R0C3:  { tex: 'assets/textures/html-logo.png',         color: 0xffffff, flipY: true  },
-  Keycap_R0C4:  { tex: 'assets/textures/css-logo.png',          color: 0xffffff, flipY: true  },
-  Keycap_R0C5:  { tex: 'assets/textures/javascript-logo.png',   color: 0xffffff, flipY: true  },
+  Keycap_R0C0:  { tex: 'assets/textures/java-logo.png',         color: 0xff6c37, flipY: true  },
+  Keycap_R0C1:  { tex: 'assets/textures/springboot-logo.png',   color: 0xd1d5db, flipY: true  },
+  Keycap_R0C2:  { tex: 'assets/textures/angular-logo.png',      color: 0xdd0031, flipY: true  },
+  Keycap_R0C3:  { tex: 'assets/textures/html-logo.png',         color: 0xe34f26, flipY: true  },
+  Keycap_R0C4:  { tex: 'assets/textures/css-logo.png',          color: 0x1572b6, flipY: true  },
+  Keycap_R0C5:  { tex: 'assets/textures/javascript-logo.png',   color: 0xf7df1e, flipY: true  },
+  Keycap_R0C6:  { tex: 'assets/textures/json-logo.png',         color: 0xffffff, flipY: true  },
+  Keycap_R0C7:  { tex: 'assets/textures/bash-logo.png',         color: 0x2b303b, flipY: true  },
+  Keycap_R0C8:  { tex: 'assets/textures/c-logo.png',            color: 0xffffff, flipY: true  },
+  Keycap_R0C9:  { tex: 'assets/textures/c++-logo.png',          color: 0x00599c, flipY: true  },
+  Keycap_R0C10: { tex: 'assets/textures/csharp-logo.png',       color: 0x68217a, flipY: true  },
+  Keycap_R0C11: { tex: 'assets/textures/go-logo.png',           color: 0x00add8, flipY: true  },
+  Keycap_R0C12: { tex: 'assets/textures/python-logo.png',       color: 0xffffff, flipY: true  },
   // Row 1: DevOps & OS
-  Keycap_R1C0:  { tex: 'assets/textures/docker-logo.png',       color: 0xffffff, flipY: true  },
-  Keycap_R1C1:  { tex: 'assets/textures/git-logo.png',          color: 0xffffff, flipY: true  },
-  Keycap_R1C2:  { tex: 'assets/textures/linux-logo.png',        color: 0xffffff, flipY: true  },
-  Keycap_R1C3:  { tex: 'assets/textures/fedora-logo.png',       color: 0xffffff, flipY: true  },
-  Keycap_R1C4:  { tex: 'assets/textures/ubuntu-logo.png',       color: 0xffffff, flipY: true  },
+  Keycap_R1C0:  { tex: 'assets/textures/docker-logo.png',       color: 0xf3f4f6, flipY: true  },
+  Keycap_R1C1:  { tex: 'assets/textures/git-logo.png',          color: 0xf05032, flipY: true  },
+  Keycap_R1C2:  { tex: 'assets/textures/linux-logo.png',        color: 0xfcc624, flipY: true  },
+  Keycap_R1C3:  { tex: 'assets/textures/fedora-logo.png',       color: 0x51a2da, flipY: true  },
+  Keycap_R1C4:  { tex: 'assets/textures/ubuntu-logo.png',       color: 0xdd4814, flipY: true  },
+  Keycap_R1C5:  { tex: 'assets/textures/kubernetes-logo.png',   color: 0x326ce5, flipY: true  },
+  Keycap_R1C6:  { tex: 'assets/textures/AWS-logo.png',          color: 0xff9900, flipY: true  },
+  Keycap_R1C7:  { tex: 'assets/textures/rust-logo.png',         color: 0xffffff, flipY: true  },
+  Keycap_R1C8:  { tex: 'assets/textures/Jenkins-logo.png',      color: 0xffffff, flipY: true  },
+  Keycap_R1C9:  { tex: 'assets/textures/azure-logo.png',        color: 0x007fff, flipY: true  },
+  Keycap_R1C10: { tex: 'assets/textures/kafka-logo.png',        color: 0xffffff, flipY: true  },
+  Keycap_R1C11: { tex: 'assets/textures/mariadb-logo.png',      color: 0x003545, flipY: true  },
+  Keycap_R1C12: { tex: 'assets/textures/mysql-logo.png',        color: 0xe48e00, flipY: true  },
   // Row 2: IDEs & Tools
-  Keycap_R2C0:  { tex: 'assets/textures/intellij-logo.png',     color: 0xffffff, flipY: true  },
-  Keycap_R2C1:  { tex: 'assets/textures/visualstudio-logo.png', color: 0xffffff, flipY: true  },
-  Keycap_R2C2:  { tex: 'assets/textures/postman-logo.png',      color: 0xffffff, flipY: true  },
-  Keycap_R2C3:  { tex: 'assets/textures/jira-logo.png',         color: 0xffffff, flipY: true  },
+  Keycap_R2C0:  { tex: 'assets/textures/intellij-logo.png',     color: 0xfe2857, flipY: true  },
+  Keycap_R2C1:  { tex: 'assets/textures/visualstudio-logo.png', color: 0x93c5fd, flipY: true  },
+  Keycap_R2C2:  { tex: 'assets/textures/postman-logo.png',      color: 0xff6c37, flipY: true  },
+  Keycap_R2C3:  { tex: 'assets/textures/jira-logo.png',         color: 0x0052cc, flipY: true  },
+  Keycap_R2C4:  { tex: 'assets/textures/postgreSQL-logo.png',   color: 0x336791, flipY: true  },
+  Keycap_R2C5:  { tex: 'assets/textures/mongodb-logo.png',      color: 0x47a248, flipY: true  },
+  Keycap_R2C6:  { tex: 'assets/textures/DBeaver-logo.png',      color: 0x382923, flipY: true  },
+  Keycap_R2C7:  { tex: 'assets/textures/nestjs-logo.png',       color: 0xe0234e, flipY: true  },
+  Keycap_R2C8:  { tex: 'assets/textures/rabbitmq-logo.png',     color: 0xffffff, flipY: true  },
+  Keycap_R2C9:  { tex: 'assets/textures/tensorflow-logo.png',   color: 0xff6f00, flipY: true  },
+  Keycap_R2C10: { tex: 'assets/textures/react-logo.png',        color: 0x282c34, flipY: true  },
+  Keycap_R2C11: { tex: 'assets/textures/vue.js-logo.png',       color: 0x41b883, flipY: true  },
+  Keycap_R2C12: { tex: 'assets/textures/tailwindCSS-logo.png',  color: 0x38bdf8, flipY: true  },
   // Row 3: AI & Platform
-  Keycap_R3C0:  { tex: 'assets/textures/github-logo.png',       color: 0xffffff, flipY: true  },
-  Keycap_R3C1:  { tex: 'assets/textures/ollama-logo.png',       color: 0xffffff, flipY: true  },
-  Keycap_R3C2:  { tex: 'assets/textures/antigravity-logo.png',  color: 0xffffff, flipY: true  },
+  Keycap_R3C0:  { tex: 'assets/textures/github-logo.png',       color: 0xd1d5db, flipY: true  },
+  Keycap_R3C1:  { tex: 'assets/textures/ollama-logo.png',       color: 0xeeeeee, flipY: true  },
+  Keycap_R3C2:  { tex: 'assets/textures/antigravity-logo.png',  color: 0x7c6aff, flipY: true  },
+  Keycap_R3C3:  { tex: 'assets/textures/chatgpt-logo.png',      color: 0x10a37f, flipY: true  },
+  Keycap_R3C4:  { tex: 'assets/textures/claude-logo.png',       color: 0xffffff, flipY: true  },
+  Keycap_R3C5:  { tex: 'assets/textures/figma-logo.png',        color: 0x2c2c2c, flipY: true  },
+  Keycap_R3C6:  { tex: 'assets/textures/redis-logo.png',        color: 0xdc382d, flipY: true  },
+  Keycap_R3C7:  { tex: 'assets/textures/archlinux-logo.png',    color: 0x1793d1, flipY: true  },
+  Keycap_R3C8:  { tex: 'assets/textures/claudecode-logo.png',   color: 0x000000, flipY: true  },
 };
 
 // ═════════════════════════════════════════════════════════════════════════════
@@ -233,10 +263,8 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
     tex.colorSpace = THREE.SRGBColorSpace;
     tex.flipY      = flipY;
 
-    // Shrink logo to 60% of face, centered
-    const LOGO_SIZE = 0.6;
-    tex.repeat.set(1 / LOGO_SIZE, 1 / LOGO_SIZE);
-    tex.center.set(0.5, 0.5);
+    // Use a 1:1 mapped texture since we now scale the Plane geometry itself 
+    // to avoid UV stretching and color bleeding along the edges.
     tex.wrapS = THREE.ClampToEdgeWrapping;
     tex.wrapT = THREE.ClampToEdgeWrapping;
   }
@@ -288,9 +316,32 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
 
           const config = KEYCAP_TEXTURE_MAP[mesh.name];
           if (config) {
+            mesh.material = new THREE.MeshStandardMaterial({
+              color: config.color,
+              roughness: 0.25,
+              metalness: 0.3,
+              envMapIntensity: 1.2,
+            });
+
             const tex = texLoader.load(config.tex);
             this.configureLogoTexture(tex, config.flipY);
-            mesh.material = this.createLogoMaterial(tex);
+            const logoMat = this.createLogoMaterial(tex);
+
+            mesh.geometry.computeBoundingBox();
+            const bbox = mesh.geometry.boundingBox!;
+            const keyW = bbox.max.x - bbox.min.x;
+            const keyD = bbox.max.z - bbox.min.z;
+            
+            const LOGO_SCALE = 0.6;
+            const planeGeo = new THREE.PlaneGeometry(keyW * LOGO_SCALE, keyD * LOGO_SCALE);
+            const logoPlane = new THREE.Mesh(planeGeo, logoMat);
+            
+            logoPlane.rotation.x = -Math.PI / 2;
+            logoPlane.position.x = (bbox.max.x + bbox.min.x) / 2;
+            logoPlane.position.z = (bbox.max.z + bbox.min.z) / 2;
+            logoPlane.position.y = bbox.max.y + 0.001;
+            logoPlane.receiveShadow = true;
+            mesh.add(logoPlane);
           }
         });
 
@@ -413,29 +464,54 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
       { texturePath: 'assets/textures/html-logo.png',         row: 0, col: 3 },
       { texturePath: 'assets/textures/css-logo.png',          row: 0, col: 4 },
       { texturePath: 'assets/textures/javascript-logo.png',   row: 0, col: 5 },
+      { texturePath: 'assets/textures/json-logo.png',         row: 0, col: 6 },
+      { texturePath: 'assets/textures/bash-logo.png',         row: 0, col: 7 },
+      { texturePath: 'assets/textures/c-logo.png',            row: 0, col: 8 },
+      { texturePath: 'assets/textures/c++-logo.png',          row: 0, col: 9 },
+      { texturePath: 'assets/textures/csharp-logo.png',       row: 0, col: 10 },
+      { texturePath: 'assets/textures/go-logo.png',           row: 0, col: 11 },
+      { texturePath: 'assets/textures/python-logo.png',       row: 0, col: 12 },
       { texturePath: 'assets/textures/docker-logo.png',       row: 1, col: 0 },
       { texturePath: 'assets/textures/git-logo.png',          row: 1, col: 1 },
       { texturePath: 'assets/textures/linux-logo.png',        row: 1, col: 2 },
       { texturePath: 'assets/textures/fedora-logo.png',       row: 1, col: 3 },
       { texturePath: 'assets/textures/ubuntu-logo.png',       row: 1, col: 4 },
+      { texturePath: 'assets/textures/kubernetes-logo.png',   row: 1, col: 5 },
+      { texturePath: 'assets/textures/AWS-logo.png',          row: 1, col: 6 },
+      { texturePath: 'assets/textures/rust-logo.png',         row: 1, col: 7 },
+      { texturePath: 'assets/textures/Jenkins-logo.png',      row: 1, col: 8 },
+      { texturePath: 'assets/textures/azure-logo.png',        row: 1, col: 9 },
+      { texturePath: 'assets/textures/kafka-logo.png',        row: 1, col: 10 },
+      { texturePath: 'assets/textures/mariadb-logo.png',      row: 1, col: 11 },
+      { texturePath: 'assets/textures/mysql-logo.png',        row: 1, col: 12 },
       { texturePath: 'assets/textures/intellij-logo.png',     row: 2, col: 0 },
       { texturePath: 'assets/textures/visualstudio-logo.png', row: 2, col: 1 },
       { texturePath: 'assets/textures/postman-logo.png',      row: 2, col: 2 },
       { texturePath: 'assets/textures/jira-logo.png',         row: 2, col: 3 },
+      { texturePath: 'assets/textures/postgreSQL-logo.png',   row: 2, col: 4 },
+      { texturePath: 'assets/textures/mongodb-logo.png',      row: 2, col: 5 },
+      { texturePath: 'assets/textures/DBeaver-logo.png',      row: 2, col: 6 },
+      { texturePath: 'assets/textures/nestjs-logo.png',       row: 2, col: 7 },
+      { texturePath: 'assets/textures/rabbitmq-logo.png',     row: 2, col: 8 },
+      { texturePath: 'assets/textures/tensorflow-logo.png',   row: 2, col: 9 },
+      { texturePath: 'assets/textures/react-logo.png',        row: 2, col: 10 },
+      { texturePath: 'assets/textures/vue.js-logo.png',       row: 2, col: 11 },
+      { texturePath: 'assets/textures/tailwindCSS-logo.png',  row: 2, col: 12 },
       { texturePath: 'assets/textures/github-logo.png',       row: 3, col: 0 },
       { texturePath: 'assets/textures/ollama-logo.png',       row: 3, col: 1 },
       { texturePath: 'assets/textures/antigravity-logo.png',  row: 3, col: 2 },
+      { texturePath: 'assets/textures/chatgpt-logo.png',      row: 3, col: 3 },
+      { texturePath: 'assets/textures/claude-logo.png',       row: 3, col: 4 },
+      { texturePath: 'assets/textures/figma-logo.png',        row: 3, col: 5 },
+      { texturePath: 'assets/textures/redis-logo.png',        row: 3, col: 6 },
+      { texturePath: 'assets/textures/archlinux-logo.png',    row: 3, col: 7 },
+      { texturePath: 'assets/textures/claudecode-logo.png',   row: 3, col: 8 },
     ];
 
     const iconMap = new Map<string, string>();
     iconSlots.forEach(s => iconMap.set(`${s.row},${s.col}`, s.texturePath));
 
     const texLoader = new THREE.TextureLoader();
-
-    // Icon key sides — dark, clean
-    const iconSideMat = new THREE.MeshStandardMaterial({
-      color: 0x222233, roughness: 0.25, metalness: 0.3, envMapIntensity: 1.2,
-    });
 
     // Blank keys — dark charcoal
     const blankMat = new THREE.MeshStandardMaterial({
@@ -461,13 +537,13 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
 
         let mat: THREE.Material | THREE.Material[];
 
-        if (isIcon) {
-          const logoTex = texLoader.load(texPath!);
-          this.configureLogoTexture(logoTex, true);
-          const topMat = this.createLogoMaterial(logoTex);
+        const keyConfig = Object.values(KEYCAP_TEXTURE_MAP).find(cfg => cfg.tex === texPath);
+        const iconColor = keyConfig ? keyConfig.color : 0x222233;
 
-          // 6-slot: only index 2 (+Y top) gets the logo
-          mat = [iconSideMat, iconSideMat, topMat, iconSideMat, iconSideMat, iconSideMat];
+        if (isIcon) {
+          mat = new THREE.MeshStandardMaterial({
+            color: iconColor, roughness: 0.25, metalness: 0.3, envMapIntensity: 1.2,
+          });
         } else if (isAccent) {
           mat = accentMat;
         } else {
@@ -482,6 +558,21 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
         );
         key.castShadow = key.receiveShadow = true;
         group.add(key);
+
+        if (isIcon) {
+          const logoTex = texLoader.load(texPath!);
+          this.configureLogoTexture(logoTex, true);
+          const logoMat = this.createLogoMaterial(logoTex);
+          
+          const LOGO_SCALE = 0.6;
+          const planeGeo = new THREE.PlaneGeometry(w * LOGO_SCALE, d * LOGO_SCALE);
+          const logoPlane = new THREE.Mesh(planeGeo, logoMat);
+          logoPlane.rotation.x = -Math.PI / 2;
+          logoPlane.position.copy(key.position);
+          logoPlane.position.y += (h / 2) + 0.002;
+          logoPlane.receiveShadow = true;
+          group.add(logoPlane);
+        }
       }
     }
 

@@ -205,24 +205,10 @@ export class ProjectsComponent implements AfterViewInit {
 
   projects = [
     {
-      icon: '👁️',
-      title: 'Phantom Visible',
-      tagline: 'Spring Boot + Angular + Gemini AI',
-      github: 'https://github.com/PhantomVisible',
-      desc: 'Full-stack AI-native portfolio/chat application with a JRPG-style interface. Spring Boot powers the REST API and AI integration layer; Angular handles the SPA frontend with reactive state management.',
-      tags: ['Java', 'Spring Boot', 'Angular', 'Gemini 2.5', 'Spring AI'],
-      architecture: [
-        { layer: 'Backend', detail: 'Spring Boot REST API with Spring AI + ChatClient for streaming Gemini responses' },
-        { layer: 'AI Layer', detail: 'GOOGLE_AI_API_KEY env var configures Gemini 2.5 Flash; InMemoryChatMemory for session context' },
-        { layer: 'Frontend', detail: 'Angular 17 standalone SPA with RxJS-based service communication and JRPG dialogue UI' },
-        { layer: 'Auth', detail: 'Spring Security with JWT; session isolation via sessionId header routing' },
-      ],
-    },
-    {
       icon: '🌿',
-      title: 'Plant App Ecosystem',
+      title: 'Plant Social',
       tagline: 'Modular microservice — Demo Day showcase',
-      github: 'https://github.com/PhantomVisible',
+      github: 'https://github.com/PhantomVisible/PlantSocial',
       desc: 'A three-module plant management platform built for Demo Day. Presents a Tamagotchi-style care game, plant health diagnosis, and AI-powered species identification — all as loosely coupled services.',
       tags: ['Spring Boot', 'Angular', 'AI Vision', 'Microservices', 'JPA'],
       architecture: [
@@ -238,12 +224,26 @@ export class ProjectsComponent implements AfterViewInit {
       tagline: 'Cloud-native microservices platform',
       github: 'https://github.com/PhantomVisible/car-management-system',
       desc: 'Enterprise-grade car rental platform built on microservices. Features real-time availability, secure auth, independent service deployability, and high-volume reservation processing.',
-      tags: ['Java', 'Spring Boot', 'Eureka', 'Microservices', 'PostgreSQL'],
+      tags: ['Java', 'Spring Boot', 'Eureka', 'Microservices', 'Hexagonal Architecture', 'PostgreSQL'],
       architecture: [
         { layer: 'Service Mesh', detail: 'Eureka discovery server + API Gateway for unified routing; independent Docker deployments' },
         { layer: 'Auth Service', detail: 'JWT-based Spring Security; user roles (admin/customer) with service-to-service auth' },
         { layer: 'Rental Service', detail: 'Car inventory + reservation logic; event-driven availability updates' },
         { layer: 'Frontend', detail: 'Angular SPA consuming the gateway API; image upload → Base64 storage + retrieval' },
+      ],
+    },
+    {
+      icon: '🏦',
+      title: 'bank-account-system',
+      tagline: 'Spring Boot + Java',
+      github: 'https://github.com/PhantomVisible/bank-account-system',
+      desc: ' robust banking application where users can manage accounts, perform transactions, and generate account statements. The application follows clean architecture principles and handles persistence in both SQL and NoSQL databases. Users should be able to export their bank statement as a PDF. ',
+      tags: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'Spring Data JPA', 'H2 Database'],
+      architecture: [
+        { layer: 'Core Architecture', detail: 'Spring Boot REST API built on Clean Architecture principles, ensuring strict separation between domain business logic and web layers.' },
+        { layer: 'Data & Persistence', detail: 'Polyglot persistence model utilizing Spring Data JPA for ACID-compliant SQL transactions and NoSQL for scalable document storage.' },
+        { layer: 'Document Engine', detail: 'Custom reporting service handling dynamic data aggregation and real-time PDF compilation for secure bank statement exports.' },
+        { layer: 'Security & Auth', detail: 'Stateless authentication architecture secured via Spring Security and JWT, ensuring robust endpoint protection and user isolation.' },
       ],
     },
   ];

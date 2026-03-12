@@ -116,6 +116,7 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
   private floatCurrent = { rotX: 0, rotY: 0 };
 
   private reducedMotion = false;
+  private keycapMeshes: THREE.Mesh[] = [];
 
   constructor(private ngZone: NgZone) {}
 
@@ -343,6 +344,18 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
             logoPlane.receiveShadow = true;
             mesh.add(logoPlane);
           }
+
+          // Only register the keycaps (which start with 'Keycap') for typing animations
+          if (mesh.name && mesh.name.startsWith('Keycap')) {
+            mesh.userData = {
+              baseY: mesh.position.y,
+              isAnimating: false,
+              animTime: 0,
+              animDuration: 0.12, 
+              pressDepth: 0.04    // Realistic 4mm physical travel distance
+            };
+            this.keycapMeshes.push(mesh);
+          }
         });
 
         this.scene.add(root);
@@ -377,7 +390,8 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
       return;
     }
 
-    const t = this.clock.getElapsedTime();
+    const delta = this.clock.getDelta();
+    const t = this.clock.elapsedTime;
 
     const FLOAT_AMPLITUDE = 0.22;
     const FLOAT_FREQ      = 1.60;
@@ -406,6 +420,46 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
     this.modelGroup.rotation.x = this.floatCurrent.rotX;
     this.modelGroup.rotation.y = this.floatCurrent.rotY;
     this.modelGroup.rotation.z = autoRotZ;
+
+    // --- RANDOM TYPING ANIMATION (1-3 keys at a time max) ---
+    let activeKeyCount = 0;
+    
+    // Count currently animating keys and update their positions
+    for (const key of this.keycapMeshes) {
+      if (key.userData['isAnimating']) {
+        activeKeyCount++;
+        key.userData['animTime'] += delta;
+
+        const time = key.userData['animTime'];
+        const duration = key.userData['animDuration'];
+
+        if (time >= duration) {
+          // Animation finished, snap back to base
+          key.userData['isAnimating'] = false;
+          key.position.y = key.userData['baseY'];
+        } else {
+          // A physics curve that snaps down instantly and eases back up
+          // Math.sin(0 to PI) forces it to map perfectly back to 0 at the end of the duration
+          const progress = time / duration; // 0.0 to 1.0
+          const downForce = Math.sin(progress * Math.PI) * key.userData['pressDepth'];
+          key.position.y = key.userData['baseY'] - downForce;
+        }
+      }
+    }
+
+    // Determine if we should trigger a new keystroke this frame
+    // 35% chance per frame (at 60fps = VERY active typing, snapping to another key almost instantly)
+    if (activeKeyCount < 3 && Math.random() < 0.35) {
+       const unpressedKeys = this.keycapMeshes.filter(k => !k.userData['isAnimating']);
+       if (unpressedKeys.length > 0) {
+         const randomKey = unpressedKeys[Math.floor(Math.random() * unpressedKeys.length)];
+         randomKey.userData['isAnimating'] = true;
+         randomKey.userData['animTime'] = 0;
+         
+         // Fast 120ms mechanical strike
+         randomKey.userData['animDuration'] = 0.12;
+       }
+    }
 
     this.renderer.render(this.scene, this.camera);
   }
@@ -568,11 +622,22 @@ export class ThreeSceneComponent implements AfterViewInit, OnDestroy {
           const planeGeo = new THREE.PlaneGeometry(w * LOGO_SCALE, d * LOGO_SCALE);
           const logoPlane = new THREE.Mesh(planeGeo, logoMat);
           logoPlane.rotation.x = -Math.PI / 2;
-          logoPlane.position.copy(key.position);
-          logoPlane.position.y += (h / 2) + 0.002;
+          
+          // CRITICAL FIX: Parent the logo to the key itself, so it moves when the key animates down
+          logoPlane.position.set(0, (h / 2) + 0.002, 0); 
           logoPlane.receiveShadow = true;
-          group.add(logoPlane);
+          key.add(logoPlane);
         }
+
+        // Register key for typing animation
+        key.userData = {
+          baseY: key.position.y,
+          isAnimating: false,
+          animTime: 0,
+          animDuration: 0.12,
+          pressDepth: 0.04  // Restored to a realistic travel distance
+        };
+        this.keycapMeshes.push(key);
       }
     }
 

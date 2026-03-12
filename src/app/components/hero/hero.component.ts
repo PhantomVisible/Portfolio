@@ -64,8 +64,8 @@ gsap.registerPlugin(TextPlugin);
 
           <!-- Sub-caption -->
           <p class="hero-caption" #caption>
-            Senior Full-Stack Engineer who builds systems that give users
-            <strong>Main Character</strong> energy — architecture first, aesthetics always.
+            Full-Stack Software Engineer engineering resilient applications from the database to the DOM. I build systems that give users
+            <strong>Main Character</strong> energy. Driven by a philosophy of architecture first, aesthetics always, I integrate next-gen AI tools to ship software that feels intentional, powerful, and effortlessly premium.
           </p>
 
           <!-- CTAs -->
